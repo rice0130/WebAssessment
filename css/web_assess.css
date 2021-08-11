@@ -1,0 +1,448 @@
+* {
+    box-sizing: border-box; /* always include box-sizing for all elements "*" */
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+/* NAVBAR ON TOP */
+header {
+    display: flex;
+    height: 64px;
+    padding: 0px 24px;
+}
+
+.logo {
+    display: flex;  
+    
+}
+.logo h3 {
+    height : 32px;
+    font-size: 24px;
+    margin: auto;
+}
+.logo h3 span{
+    color : grey;
+    font-size: 24px;
+}
+
+
+nav {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    
+}
+
+nav a{
+    line-height: 32px;
+    padding:8px;
+    text-decoration: none;
+    color: black;  
+ }
+
+ /* Section 1 */
+
+ .section1 {
+    display:flex;
+    background-color: lightgrey;
+    flex-wrap: wrap;
+    padding: 32px 24px;
+
+}
+.section1 img {
+    width:60%; /* Adjust image or objects based on percentage for all screens except for small see @media below */
+}
+
+.section1-content {
+    width:40%;
+    padding-left: 24px;
+    padding-right: 80px;
+    margin: auto;
+    
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.section1-content h3 {
+    font-size: 25px;
+}
+
+.section1-content a {
+    display: block;
+    background-color:grey;
+    width:80%;
+    font-size: 20px;
+    text-decoration: none;
+    text-align: center;
+    padding: 8px;
+    color: white;
+}
+
+/* Section2 of the page */
+
+.section2 {
+    display: flex;
+    margin: 32px 24px;
+    flex-wrap:wrap;
+
+
+
+}
+.leftContainer {
+   width : 60%;  
+   /* padding : 32px 24px; */
+   /* height : 100%;*/
+   padding-right: 24px; 
+}
+
+.leftContainer img {
+   width: 100%; 
+}
+
+.leftContainer h2{
+   font-size : 32px;
+  
+}
+.rightContainer {
+   width: 40%;
+  display: flex;
+  flex-wrap: wrap;
+  
+  
+    
+}
+
+
+
+
+.boxContent h3{
+
+    font-size: 24px;
+}
+.boxContent p{
+
+    margin-top: 8px;
+}
+
+.boxContent a {
+    text-decoration: none;
+    color:lightseagreen;
+    margin-top: 8px;
+}
+
+/* Session3*/
+.session3 {
+    background-color: lightgray;
+    padding : 32px 72px;
+    
+
+}
+
+
+.session3 h1 {
+    text-align: center;
+    padding-bottom: 32px;
+    margin: 0;
+}
+
+.s3-content {
+     display: flex;
+     flex-direction: column;
+    
+}
+
+.row{
+    display: flex;
+    flex: 0 1 auto;
+    flex-grow: 1;
+    
+   
+}
+.course {
+display : flex;
+flex-direction: column ;
+margin: 16px;
+
+/* flex: 1 1 auto; */
+flex-basis: 100%;
+
+}
+
+.row .course img{
+    
+    
+    width: 100%;
+    flex-grow: 1;
+    
+}
+
+.row .course .courseContent{
+    background-color: white;
+    padding: 16px 16px 24px 16px;
+    flex-grow: 1;
+}
+
+.courseContent h3{
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.courseContent h4{
+    color:grey;
+    font-weight: 400;
+    margin: 8px 0px;
+}
+.courseContent p{
+    color:grey;
+    margin:0;
+}
+
+/*session4*/
+
+.session4 {
+   background-color: white;
+   padding: 0px 0px 32px 24px;
+ 
+
+}
+.session4 h1{
+    padding:32px 0px;
+    text-align: center;
+}
+.s4-content {
+    display:flex;
+    flex-direction: row;
+   
+}
+.s4-left{
+    width:60%;
+    flex-shrink:1;
+}
+.s4-left video {
+    width: 100%;
+    padding: 0px 24px; 
+ }
+ .s4-left h3{
+    font-size : 28px;
+    margin-top: 24px;
+    margin-left:24px;
+   
+ }
+ .s4-left p{
+    margin-left:24px;
+    margin-top: 8px;
+    margin-bottom:32px;
+   
+ }
+
+.s4-right{
+    width:40%;
+    display: flex;
+    flex-direction: column;
+    flex-shrink:1;  
+}
+
+.s4-row{
+ 
+        display: flex;
+        /* margin: 0px 16px 16px 16px; 
+    */
+}
+
+.s4-row img{
+
+    margin:16px;
+
+}
+
+.s4-row img{
+width:35%;
+
+}
+.s4-row-content{
+width:65%;
+}
+
+
+
+.tandp a{
+    text-decoration: none;
+    color: grey;
+    padding: 8px;
+
+}
+.tandp {
+
+    display: flex;
+    width: 70%;
+    justify-content: flex-end;
+
+    
+}
+
+
+     
+@media only screen and (min-width: 801px) {
+.icon, .s3-sm-content {
+    display: none; 
+}
+
+.box1 img, .box2 img, .box3 img{
+        width: 35%;
+        }
+    
+ .box1 .boxContent,.box2 .boxContent,.box3 .boxContent{
+        width: 65%;
+        word-break: normal;
+        padding-left: 20px;
+       
+ }
+
+ .box1 {
+    display: flex;
+    margin: 0px 16px 16px 16px; 
+}
+.box2 , .box3 {
+    display: flex;
+    margin: 16px; 
+}
+
+footer {
+    display:flex;
+    color:gray;
+    padding: 16px 24px;
+}
+}
+@media only screen and (max-width: 800px) {
+
+    .logo, header nav,.leftContainer, .s4-right, .s4-left h3, .s4-left p, .tandp ,.s3-content{
+        display: none;
+    }
+    .header nav, .section1-content, .section1 img, .rightContainer, .s4-left{
+             width:100%;
+    }
+    .header{
+        height:64px;
+    }
+
+    .section1 {
+        padding: 0px;
+    }
+    .section1-content{
+       padding: 32px 16px 32px 16px;
+
+    }
+    
+    .section1-content h1{
+        font-size:28px;
+        margin: 0px;
+    }
+    .section1-content h3{
+        font-size:16px;
+    }
+    .section1-content a{
+      margin: auto;
+      width:100%;
+      
+    }
+    .icon{
+        width:100%;
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+        
+    }
+
+    .rightContainer .box1,.rightContainer .box2 {
+       flex-direction: column;
+       margin-bottom: 64px;
+       align-items: stretch;
+       padding:0px;
+    }
+    .rightContainer .box3{
+        flex-direction: column;
+        align-items: stretch;
+        padding:0px;
+    }
+ 
+    
+    .section2{
+        margin: 16px 16px 32px 16px;
+    }
+ 
+     .box1 img, .box2 img, .box3 img{
+        width:100%;
+        /* flex-grow:3; */
+        max-height:150px;
+        
+        
+    }
+    .box1, .box2{
+        width:100%;
+        margin:0 px;
+        margin-bottom: 64px;
+    }
+    .box3{
+        width:100%;
+        margin:0 px;
+     
+    }
+    .boxContent{
+        padding-left: 16px;
+    }
+    .box1 .boxContent,.box2 .boxContent,.box3 .boxContent{
+       width: 100%;
+        /* flex-grow:2; */
+  
+    
+    } 
+
+    .rightContainer{
+        width:100%;
+    }
+    .session3{
+        background-color: white;
+        padding: 32px 16px;
+    }
+    .session3 h1{
+        font-size:28px;
+        padding-bottom: 16px;
+    }
+
+    button {
+        border-style: none; 
+        background-color: lightgrey;
+        width:100%;
+        padding: 16px 16px 24px 16px;
+        margin-bottom: 8px;
+        text-align: left;
+
+    }
+    .s4-left video {
+     width:100%;
+     padding: 0px;
+     margin-bottom: 24px;
+     
+
+    }
+
+    .session4{
+        padding: 0px;
+    }
+    footer p{
+
+    margin: 16px 0px;
+
+    }
+
+    .session4 h1{
+        margin: 0px;
+        padding: 32px 0px 16px 0px;
+    }
+
+ 
+
+}
